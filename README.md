@@ -26,3 +26,53 @@ Power BI is a business analytics tool developed by Microsoft, designed to provid
 
 ## DAX (Data Analysis Expressions) in Power BI
 DAX is a formula language used in Power BI for creating custom calculations in calculated columns, measures, and tables. It is similar to Excel formulas but is designed to work with relational data and perform dynamic aggregations.
+
+
+# Key DAX Functions and Examples
+
+### SUM: Adds up all the numbers in a column.
+```DAX
+TotalSales = SUM(Sales[SalesAmount])
+```
+## AVERAGE: Calculates the average of a column.
+```DAX
+AverageSales = AVERAGE(Sales[SalesAmount])
+```
+
+### CALCULATE: Evaluates an expression in a modified filter context.
+```DAX
+SalesLastYear = CALCULATE(SUM(Sales[SalesAmount]), SAMEPERIODLASTYEAR(Sales[Date]))
+```
+IF: Checks a condition and returns one value if true, and another value if false.
+```DAX
+SalesCategory = IF(Sales[SalesAmount] > 500, "High", "Low")
+```
+## FILTER: Returns a table that represents a subset of another table or expression.
+```DAX
+HighSales = FILTER(Sales, Sales[SalesAmount] > 500)
+```
+### Key Performance Indicators (KPIs) in Power BI
+KPIs are measurable values that demonstrate how effectively an organization is achieving its key business objectives. In the context of IT analytics, KPIs are used to monitor and measure the performance of various IT functions.
+
+Examples of KPIs in IT Analytics
+System Uptime
+Measures the percentage of time that IT systems are operational and available.
+
+```KPI Formula: (Total Uptime / Total Time) * 100
+```
+# Incident Resolution Time
+Tracks the average time taken to resolve IT incidents.
+
+KPI Formula: AVERAGE(Incidents[ResolutionTime])
+Network Performance
+Monitors key metrics like latency, packet loss, and bandwidth utilization.
+
+KPI Formula: Specific to each metric (e.g., AVERAGE(Network[Latency]))
+User Satisfaction
+Measures user satisfaction with IT services, often through surveys.
+
+KPI Formula: AVERAGE(Surveys[SatisfactionScore])
+Cost Efficiency
+Assesses the cost-effectiveness of IT operations.
+
+KPI Formula: Total IT Costs / Total Revenue
