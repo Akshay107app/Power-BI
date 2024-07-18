@@ -4,7 +4,7 @@ Data Analytics Power BI
 # Introduction
 Power BI is a business analytics tool developed by Microsoft, designed to provide interactive visualizations and business intelligence capabilities. It enables users to create reports and dashboards by connecting to various data sources. In the IT industry, Power BI is extensively used for data analysis, transforming raw data into meaningful insights to drive decision-making and improve operational efficiency.
 
-## Usage of Power BI in the IT Industry
+## Use case of Power BI in the IT Industry
 
 ### Data Integration and Transformation
 - Power BI allows IT professionals to connect to a wide range of data sources, including databases, cloud services, and web services.
@@ -60,6 +60,8 @@ Measures the percentage of time that IT systems are operational and available.
 
 ```KPI Formula: (Total Uptime / Total Time) * 100
 ```
+
+
 # Incident Resolution Time
 Tracks the average time taken to resolve IT incidents.
 
